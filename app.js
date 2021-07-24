@@ -1,15 +1,14 @@
+//Import modules
 const chalk = require('chalk')
 const getNotes = require('./notes.js')
-const myNotes = getNotes()
-console.log(myNotes)
 
-console.log(chalk.green.bold('Success!'))
-
-
-//Old code from tutorial part of lesson 
-// const add = require('./utils.js')
-
-// const sum = add(4, -2)
+//Get command
+const command = process.argv[2]
 
 
-// console.log(sum)
+//Print Command to console
+if (command === 'add') {
+        console.log('Adding note')
+} else if (command === 'remove') {
+    console.log('Removing note')
+}
