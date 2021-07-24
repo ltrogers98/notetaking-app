@@ -3,7 +3,7 @@ const getNotes = require('./notes.js')
 const myNotes = getNotes()
 console.log(myNotes)
 
-console.log(chalk.green('Success!'))
+console.log(chalk.green.bold('Success!'))
 
 
 //Old code from tutorial part of lesson 
